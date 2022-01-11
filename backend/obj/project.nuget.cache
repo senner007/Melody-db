@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "xcxEjxcoe0pkLrqQCDp5fa6R3SZgr1gBEwti4o41Q5NG8BPkCMzfv80N0o5G+PJVe4Dw0OKM2EdYywhibXqp7g==",
+  "success": true,
+  "projectFilePath": "/home/nig/melody-db/backend/backend.csproj",
+  "expectedPackageFiles": [
+    "/home/nig/.nuget/packages/microsoft.extensions.apidescription.server/3.0.0/microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "/home/nig/.nuget/packages/microsoft.openapi/1.2.3/microsoft.openapi.1.2.3.nupkg.sha512",
+    "/home/nig/.nuget/packages/swashbuckle.aspnetcore/6.2.3/swashbuckle.aspnetcore.6.2.3.nupkg.sha512",
+    "/home/nig/.nuget/packages/swashbuckle.aspnetcore.swagger/6.2.3/swashbuckle.aspnetcore.swagger.6.2.3.nupkg.sha512",
+    "/home/nig/.nuget/packages/swashbuckle.aspnetcore.swaggergen/6.2.3/swashbuckle.aspnetcore.swaggergen.6.2.3.nupkg.sha512",
+    "/home/nig/.nuget/packages/swashbuckle.aspnetcore.swaggerui/6.2.3/swashbuckle.aspnetcore.swaggerui.6.2.3.nupkg.sha512"
+  ],
+  "logs": []
+}
