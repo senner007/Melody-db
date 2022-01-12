@@ -1,13 +1,13 @@
-### Title:
+### Description:
 Tag, play and visualize melodies for music theoretical/educational purposes.
 
-#### Purpose:
-- wip
-
-#### Description:
+#### Details:
 - Play and visualize melodies using vexflow and real piano recorded audio.
 - Add tags/descriptions to melodies with admin authentication. 
 - Automate and ease conversion of midi melodies to string based descriptions and store in db
+
+#### Purpose:
+- Fast and easy access to pracmatic melodic theory, sight singing and dictation practice.
 
 #### Technologies:
 - React / (maybe Nativescript/React Native)
