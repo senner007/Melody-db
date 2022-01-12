@@ -40,3 +40,4 @@ Tag, play and visualize melodies for music theoretical/educational purposes.
 #### Progress:
 - Jest testing issues resolved
 - Github Actions React Build and Test
+- Audio files normalized, converted, added 

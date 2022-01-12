@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-const soundfile = require('../assets/Piano.mf.C4_cut.mp3')
+const soundfile = require('../assets/Piano.mf.C4.mp3')
 
 async function loadSound(globalAudioContext: AudioContext) {
 
