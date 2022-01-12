@@ -1,12 +1,12 @@
 ### Title:
-Tag, play and visualize melodies for music theory education purposes.
+Tag, play and visualize melodies for music theoretical/educational purposes.
 
 #### Purpose:
 - wip
 
 #### Description:
-- Play and visualize melodies using vexflow and Real piano recorded audio.
-- Add tags/Descriptions to melodies using Admin authentication. 
+- Play and visualize melodies using vexflow and real piano recorded audio.
+- Add tags/descriptions to melodies with admin authentication. 
 - Automate and ease conversion of midi melodies to string based descriptions and store in db
 
 #### Technologies:
@@ -20,6 +20,7 @@ Tag, play and visualize melodies for music theory education purposes.
 - Entity Framework
 - XUnit
 - Fluent Assertions
+- Github actions
 
 #### Tags:
 - stepwise
@@ -29,9 +30,13 @@ Tag, play and visualize melodies for music theory education purposes.
 - modulation ... etc
 
 #### Backend Entity Class Properties:
-- melody : string ( melody definition converted to a string which conatins enough infrmation to be parsed by vexflow and played using piano note mp3) No duplicates
+- melody : string ( melody definition converted to a string containing enough information to be parsed by vexflow and played using piano sounds) no duplicates
 - title : string (optional)
 - composer: string (optional)
-- tag1
-- tag2
-- tag3 ... etc
+- tagname1
+- tagname2
+- tagname3 ... etc
+
+#### Progress:
+- Jest testing issues resolved
+- Github Actions React Build and Test

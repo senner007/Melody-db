@@ -1,4 +1,4 @@
-import { Dispatch, SetStateAction, useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 const soundfile = require('../assets/Piano.mf.C4_cut.mp3')
 
 async function loadSound(globalAudioContext: AudioContext) {
@@ -40,15 +40,14 @@ export function PlayStave() {
 
 
     const [audioBuffer, setAudioBuffer] = useState<AudioBuffer | null>(null)
-    const [audioContext, setAudioContext] = useState(new AudioContext())
+    const [audioContext] = useState(new AudioContext())
 
     useEffect(() => {
-        console.log(audioContext)
         ;(async () => {
             const audioBuffer = await loadSound(audioContext);
             setAudioBuffer(audioBuffer)
         })();
-    }, [])
+    }, [audioContext])
 
     async function playStave() {
         if (audioBuffer != null)

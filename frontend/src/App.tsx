@@ -1,5 +1,5 @@
 
-import React, { useRef, useEffect, useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { Score } from './VexflowReact/vexflow-react'
 import './App.css';
 import { PlayStave } from './PlayStave/play-stave';
@@ -40,6 +40,7 @@ function App() {
   return (
     <div className="App">
       <button onClick={changeState}>change</button>
+      Hello There
       <PlayStave></PlayStave>
       <Score
         staves={state} width={w} timeSignature={'4/4'}

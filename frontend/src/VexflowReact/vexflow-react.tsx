@@ -1,5 +1,6 @@
 import React, { useRef, useEffect } from 'react'
 import VexFlow from 'vexflow'
+import { IStaves } from "./IStaves" 
 
 const VF = VexFlow.Flow
 const { Formatter, Renderer, Stave, StaveNote } = VF
@@ -7,13 +8,6 @@ const { Formatter, Renderer, Stave, StaveNote } = VF
 const clefWidth = 30;
 const timeWidth = 30;
 
-interface IStaves {
-    staves: Array<any>,
-    clef?: string,
-    timeSignature? : string
-    width? : number,
-    height? : number
-}
 
 export function Score({
     staves = [],
@@ -27,13 +21,13 @@ export function Score({
     const rendererRef = useRef<VexFlow.Flow.Renderer>()
 
     useEffect(() => {
-        // if (rendererRef.current == null) {
-        if (container.current == null) {
+        const containerCurrent = container.current
+        if (containerCurrent == null) {
             return
         }
 
         rendererRef.current = new Renderer(
-            container.current,
+            containerCurrent,
             Renderer.Backends.SVG
         )
 
@@ -83,12 +77,10 @@ export function Score({
         })
 
         return function cleanup() {
-            if (container.current) {
-                container.current.innerHTML = "";
-            }
+            containerCurrent.innerHTML = "";
         };
 
-    }, [staves])
+    })
 
     return <div ref={container} />
 }
